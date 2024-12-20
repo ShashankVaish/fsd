@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <table border="black">
+        <caption>Student Information</caption>
+            <tr>
+                <th rowspan ="6">Info</th>
+                <th rowspan="2" >Name</th>
+                <th colspan = "2">Address</th>
+            </tr>
+            <th>City</th>
+            <th>House</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+    </table>
+
+    <hr color="Berry"/>
+
+    <form action="/server">
+        <label for="name">Name:</label> 
+        <input type="text" id="name" name="user"/>
+        <br>
+        <br>
+        Sex:
+        <input type="radio" id="male" name="gender"/>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender"/>
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <label for ="country">Country:</label>
+        <select name="country" id="country">
+            <option>Select an option</option>
+            <option value="Bharat">Bharat</option>
+            <option value="China">China</option>
+            <option value="Australia">Australia</option>
+            <option value="USA">United States Of America</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea type="feedback" id="message" rows="4" cols="30" name="feed"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" id="click" name="subscribe"/>
+        <label for="click">Subscribe?</label>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr border="blue" />
+
+    <h1>Feedback Form</h1>
+    <br>
+    <form action="/suraj">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Write your name" name="name"/>
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Write your email" name="mail"/>
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea type="feedback" id="message" rows="4" cols="30" name="mess"></textarea>
+        <br>
+        <br>
+        Rate us our of 5:
+        <br>
+        <input type="radio" id="one" name="rating"/>
+        <label for="one">1</label>
+        <br>
+        <input type="radio" id="two" name="rating"/>
+        <label for="two">2</label>
+        <br>
+        <input type="radio" id="three" name="rating"/>
+        <label for="three">3</label>
+        <br>
+        <input type="radio" id="four" name="rating"/>
+        <label for="four">4</label>
+        <br>
+        <input type="radio" id="five" name="rating"/>
+        <label for="five">5</label>
+        <br>
+        <br>
+        <button type="submit">Send your message!</button>
+    </form>
+    <hr>
+</body>
+</html>

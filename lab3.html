@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a registration form using HTML</title>
+</head>
+<body>
+    <table border="black">
+        <tr>
+            <td><img src="images.jpeg" alt="ABES Logo" </td>
+            <td><h1><center>ABES ENGINEERING COLLEGE</center></h1></td>
+        </tr>
+        <tr>
+            <td>
+                <b><center>Branch:</center></b>
+               <ul>
+                <li>IT</li>
+                <li>CSE</li>
+                <li>CSE_AIML</li>
+                <li>CSE_DS</li>
+                <li>ECE</li>
+                <li>ELCE</li>
+                <li>EN</li>
+                <li>ME</li>
+               </ul>
+            </td>
+            <td>
+               <center><h3>Create Registration Form using HTML</h3></center>
+                <br>
+                <form action="/abes">
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="name" placeholder="Enter your name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td>:</td>
+                        <td><input type="password" id="password" placeholder="Enter your password" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" id="email" placeholder="Enter your email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone No.</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="phone" placeholder="Enter your phone number" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" />
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" />
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date Of Birth</label></td>
+                        <td>:</td>
+                        <td><input type="date"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lang">Language Known</label></td>
+                        <td>:</td>
+                        <td>
+                            <input type="checkbox" id="eng" />
+                            <label for="eng">English</label>
+                            <input type="checkbox" id="hin" />
+                            <label for="hin">Hindi</label>
+                            <input type="checkbox" id="san" />
+                            <label for="san">Sanskrit</label>
+                            <input type="checkbox" id="rus" />
+                            <label for="rus">Russian</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td>:</td>
+                        <td><textarea placeholder="Enter your address"></textarea></td>
+                    </tr>
+                </table>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+

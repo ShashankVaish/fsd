@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height: auto;
+            margin:0 auto;
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 80px 180px 500px 60px;
+            gap:10px;
+        }
+        #logo,#nav,footer{
+            background-color: burlywood;
+        }
+        #banner{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+        }
+        #box1{
+            background-color: bisque;
+        }
+        #box2{
+            background-color: bisque;
+        }
+        #box3{
+            background-color: bisque;
+        }
+        #cen{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap:10px;
+        }
+        #Side{
+            background-color: rgb(212, 154, 112);
+        }
+        #bod{
+            background-color: rgb(214, 166, 131);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>LOGO</h2></div>
+        <div id="nav"><h2>Navigation</h2></div>
+        <div id="banner">
+            <div id="box1"><h2>BOX1</h2></div>
+            <div id="box2"><h2>BOX2</h2></div>
+            <div id="box3"><h2>BOX3</h2></div>
+        </div>
+        <div id="cen">
+            <div id="Side"><h2>SIDE BAR</h2></div>
+            <div id="bod"><h2>BODY AREA</h2></div>
+        </div>
+        <footer><h2>FOOTER</h2></footer>
+    </main>
+</body>
+</html>
