@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Table</title>
+    <style>
+       
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Marks</h1>
+        <button onclick="getMarks()">Enter Marks</button>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        
+        function getMarks() {
+            var subjects = ["Math", "Science", "English", "History", "Geography"];
+            var marks = [];
+            for (var i = 0; i < subjects.length; i++) {
+                var mark = prompt("Enter marks for " + subjects[i] + " (0-100):");
+                mark = parseInt(mark, 10);
+                marks.push(mark);
+            }
+            display(marks, subjects);
+        }
+
+        function display(marks, subjects) {
+            var sum = 0;
+            var output = '<table><tr><th>Subject</th><th>Marks</th><th>Status</th></tr>';
+
+            for (var i = 0; i < marks.length; i++) {
+                sum += marks[i];
+                var status = marks[i] < 60 ? 'Fail' : 'Pass';
+                var statusClass = marks[i] < 60 ? 'fail' : '';
+                output += '<tr><td>' + subjects[i] + '</td><td>' + marks[i] + '</td><td class="' + statusClass + '">' + status + '</td></tr>';
+            }
+
+            var average = sum / marks.length;
+
+            output += '<tr><td colspan="2"><strong>Total Marks</strong></td><td>' + sum + '</td></tr>';
+            output += '<tr><td colspan="2"><strong>Average</strong></td><td>' + average.toFixed(2) + '</td></tr>';
+            output += '</table>';
+            var semback = average>60?"pass":"fail"
+            output+= `<h3>${semback} in semester `
+
+            document.getElementById('results').innerHTML = output;
+        }
+    </script>
+</body>
+</html>
